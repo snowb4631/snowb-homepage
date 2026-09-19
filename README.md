@@ -40,4 +40,4 @@ GitHub Pages — `main` 브랜치 루트를 그대로 배포 (빌드·워크플�
 - Production: https://home.stock-snow.com
 - 기본 주소: https://snowb4631.github.io/snowb-homepage/ (커스텀 도메인 연결 후 자동 리다이렉트)
 
-© 2026 snowball Co., Ltd.
+© 2025 snowball Co., Ltd.
