@@ -65,3 +65,5 @@ DNS 반영 후(수 분~수 시간) Settings → Pages 에서 DNS check 가 통�
 | 링크 미리보기 | 카카오톡에 URL 전송 / [opengraph.xyz](https://www.opengraph.xyz) | og-image.png 노출 |
 
 카카오톡은 미리보기를 캐시합니다. 이미지를 바꾼 뒤에는 [카카오 공유 디버거](https://developers.kakao.com/tool/debugger/sharing)에서 캐시를 초기화하세요.
+
+GitHub Pages 는 CSS·JS 를 10분(`max-age=600`) 캐시합니다. `site.css`·`menu.js`·`carousel.js` 를 고치면 `index.html`·`privacy.html`·`terms.html` 의 `?v=` 값을 함께 올려야 방문자가 새 HTML 과 옛 JS/CSS 를 섞어 받지 않습니다.
