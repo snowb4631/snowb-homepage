@@ -8,17 +8,19 @@
 
 ```
 .
-├── index.html            # 메인 (Hero / About / Products / Contact)
+├── index.html            # 메인 (Hero 캐러셀 / About / Products / Contact)
 ├── privacy.html          # 개인정보처리방침
 ├── terms.html            # 이용약관
 ├── site.css              # 공통 스타일 (라이트/다크 토큰)
 ├── menu.js               # 모바일 메뉴 + 카드 부유 모션
-├── assets/               # hero-800/1400.jpg (키 비주얼), logo-96.png (헤더 로고)
-├── favicon.png · apple-touch-icon.png   # 설인 얼굴 크롭
+├── carousel.js           # Hero 캐러셀 (원형 순환 · 5초 자동 넘김 · 드래그 · 키보드)
+├── assets/               # hero-800/1400.jpg (키 비주얼), hero-*.svg (캐러셀 슬라이드 5종), logo-96.png (헤더 로고)
+├── favicon.png · apple-touch-icon.png   # 'Snowball co.,ltd' 눈덩이 크롭 (헤더 로고와 동일)
 ├── og-image.jpg          # 링크 공유 미리보기 (1200×630, 키 비주얼 크롭)
 ├── CNAME                 # home.stock-snow.com
 ├── robots.txt · sitemap.xml · .nojekyll
 ├── scripts/preview.sh    # 로컬 미리보기 (local / github 두 형태)
+├── scripts/gen-hero-slides.py  # 캐러셀 SVG 슬라이드 생성기 (표준 라이브러리만)
 ├── SETUP.md              # 배포 + DNS 가이드
 └── WORKLOG.md            # 작업내역서
 ```
@@ -32,6 +34,15 @@ scripts/preview.sh          # 두 형태 동시 실행
 scripts/preview.sh local    # http://localhost:8000/               — 커스텀 도메인 형태
 scripts/preview.sh github   # http://localhost:8001/snowb-homepage/ — github.io 기본 주소 형태
 ```
+
+## Hero 캐러셀
+
+메인 이미지는 6장 캐러셀입니다: 키 비주얼 → 대시보드 → 데이터 탐색 → 차트 분석 → 퀀트 → SnowNote.
+
+- 슬라이드 SVG 수정: `scripts/gen-hero-slides.py` 를 고친 뒤 `python3 scripts/gen-hero-slides.py` (시드 고정 — 결과가 매번 같음)
+- 슬라이드 추가: 생성기에 함수 추가 → `index.html` 에 `.hero-slide` + 점(`role="tab"`) 추가, `aria-label="n / 전체"` 갱신
+- 이미지 속 수치는 **예시** — 캐러셀 아래 안내 문구(`.hero-note`)를 지우지 말 것 (유사투자자문업 광고 규제)
+- `site.css`·`*.js` 를 고치면 HTML 의 `?v=` 값을 올릴 것 (GitHub Pages 10분 캐시, [SETUP.md](./SETUP.md) 참고)
 
 ## 배포
 
