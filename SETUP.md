@@ -38,11 +38,13 @@ git push -u origin main
 
 ## 3단계: DNS (1회)
 
-`stock-snow.com` 을 관리하는 DNS(가비아 / Route 53 등)에 레코드 1개 추가:
+`stock-snow.com` DNS 는 **Cloudflare** 에서 관리합니다 — https://dash.cloudflare.com → stock-snow.com → DNS → Records → Add record:
 
-| 타입 | 이름 | 값 |
-|---|---|---|
-| CNAME | `home` | `snowb4631.github.io` |
+| 타입 | 이름 | 값 | Proxy status |
+|---|---|---|---|
+| CNAME | `home` | `snowb4631.github.io` | **DNS only (회색 구름)** |
+
+- 주황 구름(Proxied)이면 GitHub 이 도메인 확인·인증서 발급을 못 합니다.
 
 - 루트 도메인이 아니므로 A 레코드는 필요 없습니다.
 - 기존 `trakit.stock-snow.com` 레코드는 건드리지 않습니다.
