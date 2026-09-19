@@ -59,13 +59,53 @@
     </p>
     <a href="#products" class="hero-cta">제품 보기 <span class="arrow" aria-hidden="true">→</span></a>
   </div>
-  <figure class="hero-visual">
-    <img src="assets/hero-1400.jpg"
-         srcset="assets/hero-800.jpg 800w, assets/hero-1400.jpg 1402w"
-         sizes="(max-width: 1000px) calc(100vw - 48px), 960px"
-         width="1402" height="1122"
-         alt="아이와 설인이 'Snowball co.,ltd'라고 적힌 커다란 눈덩이를 굴리며 눈 덮인 산비탈을 내려오는 일러스트">
-  </figure>
+  <div class="hero-visual" id="hero-carousel" role="region" aria-roledescription="carousel" aria-label="스노우볼 서비스 미리보기">
+    <div class="hero-track" tabindex="0" aria-label="좌우로 스크롤해 다른 이미지를 볼 수 있습니다">
+      <figure class="hero-slide" aria-roledescription="slide" aria-label="1 / 6">
+        <img src="assets/hero-1400.jpg"
+             srcset="assets/hero-800.jpg 800w, assets/hero-1400.jpg 1402w"
+             sizes="(max-width: 1000px) calc(100vw - 48px), 960px"
+             width="1402" height="1122"
+             alt="아이와 설인이 'Snowball co.,ltd'라고 적힌 커다란 눈덩이를 굴리며 눈 덮인 산비탈을 내려오는 일러스트">
+        <figcaption>Snowball</figcaption>
+      </figure>
+      <figure class="hero-slide" aria-roledescription="slide" aria-label="2 / 6">
+        <img src="assets/hero-dashboard.svg" width="1400" height="1120" loading="lazy" decoding="async"
+             alt="설산을 배경으로 한 ai-trakit 대시보드 화면 — 누적 수익률, 이번 주 시그널, 적중률, 수익 추이 차트와 자산 배분 도넛">
+        <figcaption>대시보드</figcaption>
+      </figure>
+      <figure class="hero-slide" aria-roledescription="slide" aria-label="3 / 6">
+        <img src="assets/hero-search.svg" width="1400" height="1120" loading="lazy" decoding="async"
+             alt="KOSPI 야간선물·환율·VIX 등 시장 지표를 검색해 추이와 상관도를 비교하는 데이터 탐색 화면과 돋보기">
+        <figcaption>데이터 탐색</figcaption>
+      </figure>
+      <figure class="hero-slide" aria-roledescription="slide" aria-label="4 / 6">
+        <img src="assets/hero-chart.svg" width="1400" height="1120" loading="lazy" decoding="async"
+             alt="이동평균선·지지선·거래량·RSI가 표시된 ETF 캔들 차트와 AI 매수 시그널 표시">
+        <figcaption>차트 분석</figcaption>
+      </figure>
+      <figure class="hero-slide" aria-roledescription="slide" aria-label="5 / 6">
+        <img src="assets/hero-quant.svg" width="1400" height="1120" loading="lazy" decoding="async"
+             alt="멀티팩터 점수식, 전략 대 KOSPI200 누적 성과, 팩터 상관관계 히트맵과 CAGR·MDD·Sharpe 지표">
+        <figcaption>퀀트</figcaption>
+      </figure>
+      <figure class="hero-slide" aria-roledescription="slide" aria-label="6 / 6">
+        <img src="assets/hero-snownote.svg" width="1400" height="1120" loading="lazy" decoding="async"
+             alt="SnowNote AI 메모장 화면 — 왼쪽 주제 채널 목록, 매매 일지 채널에 쌓인 마크다운 기록과 AI 자동 분류, AI 메모리 내보내기·가져오기 패널">
+        <figcaption>SnowNote</figcaption>
+      </figure>
+    </div>
+    <button type="button" class="hero-nav prev" aria-label="이전 이미지"><span aria-hidden="true">‹</span></button>
+    <button type="button" class="hero-nav next" aria-label="다음 이미지"><span aria-hidden="true">›</span></button>
+    <div class="hero-dots" role="tablist" aria-label="이미지 선택">
+      <button type="button" role="tab" aria-label="Snowball"></button>
+      <button type="button" role="tab" aria-label="대시보드"></button>
+      <button type="button" role="tab" aria-label="데이터 탐색"></button>
+      <button type="button" role="tab" aria-label="차트 분석"></button>
+      <button type="button" role="tab" aria-label="퀀트"></button>
+      <button type="button" role="tab" aria-label="SnowNote"></button>
+    </div>
+  </div>
 </section>
 
 <section class="block about" id="about">
@@ -185,5 +225,6 @@
 </footer>
 
 <script src="menu.js" defer></script>
+<script src="carousel.js" defer></script>
 </body>
 </html>
