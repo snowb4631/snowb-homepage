@@ -13,8 +13,9 @@
 ├── terms.html            # 이용약관
 ├── site.css              # 공통 스타일 (라이트/다크 토큰)
 ├── menu.js               # 모바일 메뉴 + 카드 부유 모션
-├── logo.svg · favicon.svg · apple-touch-icon.png
-├── og-image.svg · og-image.png   # 링크 공유 미리보기 (1200×630)
+├── assets/               # hero-800/1400.jpg (키 비주얼), logo-96.png (헤더 로고)
+├── favicon.png · apple-touch-icon.png   # 설인 얼굴 크롭
+├── og-image.jpg          # 링크 공유 미리보기 (1200×630, 키 비주얼 크롭)
 ├── CNAME                 # home.stock-snow.com
 ├── robots.txt · sitemap.xml · .nojekyll
 ├── scripts/preview.sh    # 로컬 미리보기 (local / github 두 형태)
