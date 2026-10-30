@@ -16,7 +16,7 @@
 ├── carousel.js           # Hero 캐러셀 (원형 순환 · 5초 자동 넘김 · 드래그 · 키보드)
 ├── assets/               # hero-800/1400.jpg (키 비주얼), hero-*.svg (캐러셀 슬라이드 5종), logo-96.png (헤더 로고)
 ├── favicon.png · apple-touch-icon.png   # 'Snowball co.,ltd' 눈덩이 크롭 (헤더 로고와 동일)
-├── og-image.jpg          # 링크 공유 미리보기 (1200×630, 키 비주얼 크롭)
+├── og-image.jpg          # 링크 공유 미리보기 (1200×630, 눈덩이 크롭 + 슬로건)
 ├── CNAME                 # home.stock-snow.com
 ├── robots.txt · sitemap.xml · .nojekyll
 ├── scripts/preview.sh    # 로컬 미리보기 (local / github 두 형태)
