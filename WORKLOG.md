@@ -140,6 +140,17 @@
 
 ---
 
+## 2026-11-01 — 제품 P004 보통의 하루 lo-fi 추가
+
+| 파일 | 내용 |
+|---|---|
+| `index.html` | Products 에 P004 LIVE 카드 추가 (youtube.com/@botongharulofi). P001 → P003 → P004 → P002 순서 |
+| `MATERIALS.md` | Products 로드맵에 P004 추가 |
+
+방송 운영 원칙(audio-capture `docs/ops/decisions.md`)의 AI 고지에 맞춰 카드 하단에 Suno 사용을 표기했습니다.
+
+---
+
 ## 미결 사항 (점검 시 확인)
 
 - [x] push 권한 — snowb4631 계정 SSH·GPG 키 등록 (2026-09-19)
