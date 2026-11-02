@@ -78,7 +78,7 @@ img { max-width: 100%; }
 .nav-links a:hover::after { transform: scaleX(1); }
 
 /* Products 펼침 메뉴 — 호버·키보드 포커스로 열림. padding-top 은 링크와 목록 사이 호버가 끊기지 않게 한다 */
-.nav-item { position: relative; }
+.nav-item { position: relative; display: flex; } /* 링크를 About·Contact 와 같은 박스로 만들어 밑줄 높이를 맞춘다 */
 .nav-menu {
   position: absolute; top: 100%; left: 50%; z-index: 110; padding-top: 12px;
   transform: translate(-50%, -4px); opacity: 0; visibility: hidden;
