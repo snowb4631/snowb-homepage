@@ -147,7 +147,7 @@
 | `index.html` | Products 에 P004 LIVE 카드 추가 (youtube.com/@botongharulofi). P001 → P003 → P004 → P002 순서 |
 | `MATERIALS.md` | Products 로드맵에 P004 추가 |
 
-방송 운영 원칙(audio-capture `docs/ops/decisions.md`)의 AI 고지에 맞춰 카드 하단에 Suno 사용을 표기했습니다.
+방송 운영 원칙(audio-capture `docs/ops/decisions.md`)의 AI 고지에 맞춰 카드 하단에 AI 음악 도구 사용을 표기했습니다.
 
 ---
 
