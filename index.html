@@ -21,7 +21,7 @@
 <link rel="icon" type="image/png" href="favicon.png?v=2">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=2">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="site.css?v=20261031">
+<link rel="stylesheet" href="site.css?v=20261103">
 </head>
 <body>
 
@@ -33,7 +33,17 @@
     </a>
     <nav class="nav-links" aria-label="주 메뉴">
       <a href="#about">About</a>
-      <a href="#products">Products</a>
+      <div class="nav-item">
+        <a href="#products">Products</a>
+        <div class="nav-menu">
+          <div class="nav-menu-list">
+            <a href="#product-trakit">ai-trakit</a>
+            <a href="#product-snote">스노트</a>
+            <a href="#product-lofi">보통의 하루 lo-fi</a>
+            <a href="#product-snownote">SnowNote</a>
+          </div>
+        </div>
+      </div>
       <a href="#contact">Contact</a>
     </nav>
     <button class="menu-toggle" id="menu-toggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobile-drawer"><span></span></button>
@@ -43,6 +53,10 @@
 <nav class="mobile-drawer" id="mobile-drawer" aria-label="모바일 메뉴">
   <a href="#about">About</a>
   <a href="#products">Products</a>
+  <a href="#product-trakit" class="sub">ai-trakit</a>
+  <a href="#product-snote" class="sub">스노트</a>
+  <a href="#product-lofi" class="sub">보통의 하루 lo-fi</a>
+  <a href="#product-snownote" class="sub">SnowNote</a>
   <a href="#contact">Contact</a>
 </nav>
 
@@ -151,7 +165,7 @@
     <p class="block-desc">지금 쓸 수 있는 것 먼저, 준비 중인 것은 정직하게 뒤로.</p>
     <div class="products-grid">
 
-      <a href="https://trakit.stock-snow.com" target="_blank" rel="noopener" class="product-card hero-product live">
+      <a id="product-trakit" href="https://trakit.stock-snow.com" target="_blank" rel="noopener" class="product-card hero-product live">
         <div class="code">P001</div>
         <div class="name">ai-trakit</div>
         <div class="ko">AI 기반 ETF 투자 정보</div>
@@ -168,7 +182,7 @@
         <div class="card-note">유사투자자문 서비스 · 투자 판단과 책임은 이용자 본인에게 있습니다.</div>
       </a>
 
-      <a href="https://snote.stock-snow.com" target="_blank" rel="noopener" class="product-card live">
+      <a id="product-snote" href="https://snote.stock-snow.com" target="_blank" rel="noopener" class="product-card live">
         <div class="code">P003</div>
         <div class="name">스노트</div>
         <div class="ko">손글씨 매매일지 카드 · s-note</div>
@@ -184,7 +198,7 @@
         <div class="card-note">매매 기록 도구이며 투자 권유가 아닙니다.</div>
       </a>
 
-      <a href="https://www.youtube.com/@botongharulofi" target="_blank" rel="noopener" class="product-card live">
+      <a id="product-lofi" href="https://www.youtube.com/@botongharulofi" target="_blank" rel="noopener" class="product-card live">
         <div class="code">P004</div>
         <div class="name">보통의 하루 lo-fi</div>
         <div class="ko">24시간 YouTube 라이브 · 노을이의 방</div>
@@ -197,10 +211,10 @@
           <li>한국어 lo-fi</li>
           <li>가사 맞춤 장면</li>
         </ul>
-        <div class="card-note">AI(Suno)로 만든 음악을 사용합니다.</div>
+        <div class="card-note">AI 음악 도구로 만든 음악을 사용합니다.</div>
       </a>
 
-      <div class="product-card coming">
+      <div id="product-snownote" class="product-card coming">
         <div class="code">P002</div>
         <div class="name">SnowNote</div>
         <div class="ko">AI 메모장 · 스노우노트</div>

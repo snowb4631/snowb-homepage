@@ -77,6 +77,25 @@ img { max-width: 100%; }
 }
 .nav-links a:hover::after { transform: scaleX(1); }
 
+/* Products 펼침 메뉴 — 호버·키보드 포커스로 열림. padding-top 은 링크와 목록 사이 호버가 끊기지 않게 한다 */
+.nav-item { position: relative; }
+.nav-menu {
+  position: absolute; top: 100%; left: 50%; z-index: 110; padding-top: 12px;
+  transform: translate(-50%, -4px); opacity: 0; visibility: hidden;
+  transition: opacity 0.16s var(--ease-out), transform 0.16s var(--ease-out), visibility 0.16s;
+}
+.nav-item:hover .nav-menu, .nav-item:focus-within .nav-menu {
+  transform: translate(-50%, 0); opacity: 1; visibility: visible;
+}
+.nav-menu-list {
+  display: flex; flex-direction: column; min-width: 180px; padding: 6px;
+  background: var(--sf); border: 1px solid var(--bd); border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(15, 27, 45, 0.14);
+}
+.nav-links .nav-menu-list a { padding: 9px 12px; border-radius: 8px; white-space: nowrap; color: var(--tx2); }
+.nav-links .nav-menu-list a::after { display: none; }
+.nav-links .nav-menu-list a:hover, .nav-links .nav-menu-list a:focus-visible { background: var(--ac-chip); color: var(--ac); }
+
 .menu-toggle {
   display: none; width: 44px; height: 44px; margin-right: -8px;
   align-items: center; justify-content: center;
@@ -107,6 +126,7 @@ img { max-width: 100%; }
   display: block; padding: 14px 0; font-size: 17px; font-weight: 700;
   border-bottom: 1px solid var(--bd);
 }
+.mobile-drawer a.sub { padding: 11px 0 11px 14px; font-size: 15px; font-weight: 600; color: var(--tx2); }
 .drawer-backdrop { display: none; position: fixed; inset: 0; background: rgba(0, 0, 0, 0.32); z-index: 150; }
 .drawer-backdrop.open { display: block; }
 @media (max-width: 720px) {
@@ -229,6 +249,8 @@ img { max-width: 100%; }
 
 /* ─── Products ─── */
 .products-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.product-card { scroll-margin-top: 88px; }
+.product-card:target { border-color: var(--ac); box-shadow: 0 0 0 2px var(--ac-glow); }
 .products-grid .hero-product { grid-column: 1 / -1; }
 @media (max-width: 860px) { .products-grid { grid-template-columns: 1fr; } }
 .product-card {
